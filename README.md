@@ -49,6 +49,10 @@ Can be one of the followings
 - 'mumbai'
 - 'bsc-mainnet'
 - 'bsc-testnet'
+- 'arbitrum'
+- 'arbitrum-sepolia'
+- 'blast'
+- 'blast-sepolia'
 
 
 *custom_address*: str - An address of custom multicall smart contract. 
@@ -102,9 +106,9 @@ Defining constants: ERC20 token ABI token mainnet addresses.
     # ERC20 ABI string is cropped for readability
     >>> ERC20_ABI = '[{"constant":true,"inputs":[],"name":"name", ...
 
-    >>> USDT_ADDRESS = Web3.toChecksumAddress('0xdAC17F958D2ee523a2206206994597C13D831ec7')
-    >>> USDC_ADDRESS = Web3.toChecksumAddress('0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48')
-    >>> BNB_ADDRESS = Web3.toChecksumAddress('0xB8c77482e45F1F44dE1745F52C74426C631bDD52')
+    >>> USDT_ADDRESS = Web3.to_checksum_address('0xdAC17F958D2ee523a2206206994597C13D831ec7')
+    >>> USDC_ADDRESS = Web3.to_checksum_address('0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48')
+    >>> BNB_ADDRESS = Web3.to_checksum_address('0xB8c77482e45F1F44dE1745F52C74426C631bDD52')
 
 Initializing web3 instance.
 
