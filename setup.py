@@ -8,13 +8,13 @@ this_directory = Path(__file__).parent
 long_description = (this_directory / "README.md").read_text()
 
 setup(
-    name='simple_multicall_v6',
+    name='simple_multicall',
     version=VERSION,
     description=DESCRIPTION,
     long_description=long_description,
     long_description_content_type='text/markdown',
-    author='Chenciao8',
-    author_email= 'chenciao8@gmail.com',
+    author='Igor Lapshin',
+    author_email= 'igorlapshin@list.ru',
     packages=find_packages(),
     license='MIT',
     keywords=['multicall', 'web3'],
