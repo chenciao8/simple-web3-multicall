@@ -1,20 +1,20 @@
 from setuptools import setup, find_packages
 from pathlib import Path
 
-VERSION = '0.1.5' 
+VERSION = '0.1.6' 
 DESCRIPTION = 'Simple Web3 multicall'
 
 this_directory = Path(__file__).parent
 long_description = (this_directory / "README.md").read_text()
 
 setup(
-    name='simple_multicall',
+    name='simple_multicall_v6',
     version=VERSION,
     description=DESCRIPTION,
     long_description=long_description,
     long_description_content_type='text/markdown',
-    author='Igor Lapshin',
-    author_email= 'igorlapshin@list.ru',
+    author='Chenciao8',
+    author_email= 'chenciao8@gmail.com',
     packages=find_packages(),
     license='MIT',
     keywords=['multicall', 'web3'],

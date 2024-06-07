@@ -62,10 +62,10 @@ class Multicall:
         custom_abi=None
     ):
         if custom_address:
-            address = Web3.toChecksumAddress(custom_address)
+            address = Web3.to_checksum_address(custom_address)
         else:
             try:
-                address = Web3.toChecksumAddress(MAKERDAO_MULTICALL_ADDRESS[chain])  
+                address = Web3.to_checksum_address(MAKERDAO_MULTICALL_ADDRESS[chain])  
             except(Exception):
                 print('Chain name key not in default dictionary')
                 return  
